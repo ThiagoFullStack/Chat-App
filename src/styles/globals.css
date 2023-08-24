@@ -18,10 +18,86 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+
+.container {
+  width: 50rem;
+
+}
+
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.right {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.left {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.chatForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+
+.chatForm input {
+  width: 100%;
+  height: 2.5rem;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #FFFF;
+  border-radius: 8px;
+  margin-top: 5px;
+  padding: 16px;
+}
+
+.chatForm button {
+  color: #b92929;
+  background-color: #FFF;
+  padding: 8px;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+
+.chatForm button:hover {
+  background-color: #b92929;
+  color: #FFF;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #2980b9;
 }
